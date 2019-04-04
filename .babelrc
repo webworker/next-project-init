@@ -10,5 +10,14 @@
     ],
     "@zeit/next-typescript/babel"
   ],
-  "plugins": [["emotion"]]
+  "plugins": [
+    ["emotion"],
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "style": "css"
+      }
+    ]
+  ]
 }

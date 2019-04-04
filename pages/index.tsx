@@ -1,10 +1,5 @@
 import React from 'react';
-import styled from '@emotion/styled';
-
-const Button = styled.button`
-  display: block;
-  color: red;
-`;
+import { Button } from 'antd';
 
 export default class IndexPage extends React.Component {
   state = {
@@ -38,7 +33,7 @@ export default class IndexPage extends React.Component {
         <h1 className="title">
           这里是H1标签，Nicholas, <span>HHHHH</span>
         </h1>
-        <Button className="button" type="button" onClick={this.handleClick}>
+        <Button type="danger" className="button" onClick={this.handleClick}>
           Index Page: {title}
         </Button>
         <style jsx>{`
